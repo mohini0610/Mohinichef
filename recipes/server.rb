@@ -8,6 +8,10 @@ package 'httpd' do
  action :install
 end
 
+package 'cups' do
+ action :install
+end
+
 file '/var/www/index.html' do
  content '<h1>Hello,world!</h1>'
 end
